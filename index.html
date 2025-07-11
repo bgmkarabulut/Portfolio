@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Sitem</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--about animasyonunu kullanabilmek için gerekli olan script -->
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
+      type="module"
+    ></script>
+    <div class="toggle-btn" id="toggle-btn">&#9776;</div>
+    <div class="container">
+      <nav>
+        <ul class="nav-links">
+          <!-- # ile scroll için nereye gideceklerini bildirdim. htm{scroll:smooth} -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="hero-content">
+        <img src="images/Cartoonify.png" alt="" />
+      </div>
+      <div>
+        <h1>Hi! I am Begüm</h1>
+        <p>and I'm a Computer Engineering Student</p>
+        <button class="me-btn" style="vertical-align: middle">
+          <span>More ME</span>
+        </button>
+      </div>
+    </section>
+    <section id="about">
+      <!--lottiede bulduğum animasyonun kodu bu şekilde. kullanbailmek için bodyden hemen sonra script tagı ekliyorum. -->
+      <dotlottie-wc
+        src="https://lottie.host/ebb79526-12e0-448c-83ab-09a1c516bf3a/GN1dLImIFX.lottie"
+        style="width: 500px; height: 500px"
+        speed="1"
+        autoplay
+        loop
+      ></dotlottie-wc>
+      <div class="text">
+        <div class="profile">
+          <h2>Profile</h2>
+          <p>
+            I'm a motivated computer engineering student with practical
+            experience in web development and strong foundation in programming.
+            I'm specially comfortable working with JavaScript.
+          </p>
+        </div>
+        <div class="education">
+          <h2>Education</h2>
+          <p>İstanbul Arel University 2021- present</p>
+        </div>
+        <div class="experience">
+          <h2>Experience</h2>
+          <h4>Aktif Tech 07/2024-08/2024</h4>
+          <p>
+            Developed a Quiz App using Angular during a one-month internship.
+            Gained hands-on experience with Angular framework and its
+            components.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="work">this is work</section>
+    <section id="contact">this is contact</section>
+    <footer class="footer">
+      <p>&copy; 2025 Begüm Nur Karabulut</p>
+      <p>
+        Contact Me:
+        <a href="https://www.linkedin.com/in/begümkarabulut" target="_blank"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
