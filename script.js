@@ -9,3 +9,20 @@ toggleBtn.addEventListener("click", () => {
 meBtn.addEventListener("click", () => {
   window.location.href = "#about";
 });
+function openGallery(images) {
+  const modal = document.getElementById("modal");
+  const container = document.getElementById("modal-images");
+  container.innerHTML = "";
+
+  images.forEach((src) => {
+    const img = document.createElement("img");
+    img.src = src;
+    container.appendChild(img);
+  });
+
+  modal.style.display = "block";
+}
+
+function closeGallery() {
+  document.getElementById("modal").style.display = "none";
+}
