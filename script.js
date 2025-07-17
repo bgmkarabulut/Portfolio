@@ -9,20 +9,19 @@ toggleBtn.addEventListener("click", () => {
 meBtn.addEventListener("click", () => {
   window.location.href = "#about";
 });
-function openGallery(images) {
-  const modal = document.getElementById("modal");
-  const container = document.getElementById("modal-images");
-  container.innerHTML = "";
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-  images.forEach((src) => {
-    const img = document.createElement("img");
-    img.src = src;
-    container.appendChild(img);
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
-
-  modal.style.display = "block";
-}
-
-function closeGallery() {
-  document.getElementById("modal").style.display = "none";
-}
+});
