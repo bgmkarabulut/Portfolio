@@ -12,6 +12,29 @@ body {
   margin: 0;
   padding: 20px;
 }
+#darkModeToggle {
+  position: relative;
+  top: 0;
+  left: 20px;
+  background: #ce5d75;
+
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+body.dark {
+  background: #111827;
+  color: white;
+}
+body.dark footer {
+  background: #111827;
+  color: white;
+}
+
 #scrollToTopBtn {
   position: fixed;
   bottom: 30px;

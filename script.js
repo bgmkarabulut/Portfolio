@@ -25,3 +25,11 @@ scrollToTopBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+document.getElementById("darkModeToggle").addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  const isDarkMode = document.body.classList.contains("dark");
+  document.getElementById("darkModeToggle").textContent = isDarkMode
+    ? "  🌞"
+    : "🌙 ";
+});
